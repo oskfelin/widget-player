@@ -1,6 +1,37 @@
-
+$fading: rgba(84, 66, 130, 0.26)
 
 body
   background-image: url("images/background.jpg")
   background-repeat: no-repeat
   background-size: cover
+  z-index: -5
+  #player
+    position: relative
+    width: 360px
+    height: 480px
+    border-radius: 25px
+    margin: auto
+    overflow: hidden
+    .fadding
+      position: absolute
+      background-color: $fading
+      z-index: 49
+      width: 360px
+      height: 300px
+    .artist-picture-div
+      width: 360px
+      height: 300px
+      overflow: hidden
+      .artist-picture
+        //position: absolute
+        z-index: -1
+    .top-options-bar
+      background-color: rgba(122, 118, 145, 0.6)
+      height: 65px
+      width: 360px
+      z-index: 0
+    #volume-white
+      background-color: white
+      width: 257px
+      height: 7px
+      z-index: 100
