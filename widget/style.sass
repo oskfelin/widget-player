@@ -1,5 +1,7 @@
 $fading: rgba(84, 66, 130, 0.26)
 $text-background: rgba(42, 34, 77, 0.6)
+$icon-color: #60558f
+$red-color: #ed5e74
 
 body
   background-image: url("images/background.jpg")
@@ -66,7 +68,7 @@ body
       width: 360px
       height: 7px
       position: absolute
-      background-color: #ed5e74
+      background-color: $red-color
     .ui-slider-handle
       position: absolute
       width: 25px
@@ -86,3 +88,38 @@ body
       width: 360px
       height: 135px
       background: #eeeff5
+      position: relative
+      .icons
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+      .share
+        width: 36px
+        height: 36px
+        background: white
+        color: $icon-color
+        left: 20px
+        top: 47px
+      .previous
+        width: 36px
+        height: 36px
+        background: $icon-color
+        color: white
+        left: 100px
+        top: 47px
+      .next
+        width: 36px
+        height: 36px
+        background: $icon-color
+        color: white
+        left: 223px
+        top: 47px
+      .favourite
+        width: 36px
+        height: 36px
+        background: white
+        color: $red-color
+        left: 303px
+        top: 47px
