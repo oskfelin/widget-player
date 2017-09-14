@@ -191,8 +191,10 @@ body
   #songs-list
     .song
       width: 283px
-      height: 80px
-      margin: auto
+      height: 56px
+      margin: auto auto 24px auto
+      border-bottom: solid 1px #d3d5de
+      position: relative
     .song:first-child
       margin-top: 18px
     span
@@ -203,3 +205,17 @@ body
     .song-duration:after
       content: '|'
       margin: auto auto auto 5px
+    .song-name
+      font-size: 16px
+      color: $song-title-color
+    .fa
+      position: absolute
+      cursor: pointer
+    .fa-share-alt
+      left: 241px
+      top: 14px
+      color: $icon-color
+    .fa-heart
+      left: 264px
+      top: 14px
+      color: $red-color
