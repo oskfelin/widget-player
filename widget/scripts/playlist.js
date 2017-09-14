@@ -1,4 +1,4 @@
-var $playlist = $('#playlist');
+var $playlist = $('#playlist, .shadow2-bottom, .shadow2-top');
 var $player = $('#player, .shadow1-bottom, .shadow1-top');
 var $burger = $('#burger');
 var $back = $('#back');
