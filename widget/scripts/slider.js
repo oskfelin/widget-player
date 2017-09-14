@@ -3,7 +3,7 @@ $(function() {
     slider.slider({
         range: "min",
         min: 1,
-        value: 60
+        value: 71
     });
 
 });

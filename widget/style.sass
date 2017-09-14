@@ -15,9 +15,9 @@ body
     .fadding
       position: absolute
       background-color: $fading
-      z-index: 49
+      z-index: 5
       width: 360px
-      height: 300px
+      height: 365px
     .artist-picture-div
       width: 360px
       height: 300px
@@ -30,8 +30,22 @@ body
       height: 65px
       width: 360px
       z-index: 0
-    #volume-white
-      background-color: white
-      width: 257px
+    #slider
+      width: 360px
       height: 7px
-      z-index: 100
+      position: absolute
+      background-color: #ed5e74
+    .ui-slider-handle
+      position: absolute
+      width: 25px
+      height: 25px
+      cursor: pointer
+      background: url('/images/volume-toggle.png') no-repeat 50% 50%
+      top: -7px
+      margin-left: -12px
+      z-index: 6
+    .ui-slider-range
+      background: white
+      position: absolute
+      top: 0
+      height: 100%
