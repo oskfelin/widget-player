@@ -1,5 +1,5 @@
 var $playlist = $('#playlist');
-var $player = $('#player');
+var $player = $('#player, .shadow1-bottom, .shadow1-top');
 var $burger = $('#burger');
 var $back = $('#back');
 
@@ -7,15 +7,11 @@ $($playlist.hide());
 
 $($burger).click(function () {
     $player.hide();
-    $('.shadow1-bottom').hide();
-    $('.shadow1-top').hide();
     $playlist.show()
 });
 $($back).click(function () {
     $playlist.hide();
     $player.show();
-    $('.shadow1-bottom').show();
-    $('.shadow1-top').show();
 });
 
 
