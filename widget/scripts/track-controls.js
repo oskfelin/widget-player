@@ -1,6 +1,8 @@
 var $play = $('.play');
 var $pause = $('.pause');
 var $next = $('.next');
+var $previous = $('.previous');
+
 $($play.hide());
 
 $($pause).click(function () {
@@ -21,6 +23,19 @@ $.getJSON("../data/songs.json", function (songs) {
         }
         else {
             currId = 1;
+            titleLoader();
+            return currId
+        }
+    });
+    $($previous).click(function () {
+        if (currId > 1) {
+            currId = currId - 1;
+            titleLoader();
+            console.log(currId);
+            return currId - 1
+        }
+        else {
+            currId = songs.length;
             titleLoader();
             return currId
         }
