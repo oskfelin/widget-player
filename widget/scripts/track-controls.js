@@ -39,8 +39,17 @@ $.getJSON("../data/songs.json", function (songs) {
             return currId
         }
     });
-});
+    window.onload = function onLoad() {
+        var circle = new ProgressBar.Circle('#progress', {
+            color: '#d3d5de',
+            strokeWidth: 5,
+            trailColor: '#ffffff',
+            trailWidth: 5
+        });
+        circle.set(0.4);
+    };
 
+});
 
 
 
