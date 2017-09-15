@@ -48,4 +48,8 @@ $.getJSON("../data/songs.json", function (songs) {
 });
 
 
+$($('.top-option')).click(function () {
+    $(this).toggleClass('top-option-clicked')
+});
+
 
