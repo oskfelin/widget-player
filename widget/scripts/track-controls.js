@@ -31,7 +31,6 @@ $.getJSON("../data/songs.json", function (songs) {
         if (currId > 1) {
             currId = currId - 1;
             titleLoader();
-            console.log(currId);
             return currId - 1
         }
         else {

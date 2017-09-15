@@ -3,7 +3,7 @@ var currId = 1;
 function titleLoader() {
     $('#title').empty();
     $.getJSON("../data/songs.json", function (songs) {
-        songs.forEach(function (song, index) {
+        songs.forEach(function (song) {
             if (song.id === currId) {
                 $('#title')
                         .append($('<h3>').addClass('artist-name').text(song.artist))
