@@ -17,7 +17,7 @@ $($back).click(function () {
 function playlist() {
     $('#songs-list').empty();
     $.getJSON("../data/songs.json", function (songs) {
-        songs.forEach(function (song, index) {
+        songs.forEach(function (song) {
             $('#songs-list').append($('<div>').addClass('song')
                 .append($('<span>').addClass('song-duration').text(song.duration))
                 .append($('<span>').addClass('song-artist').text(song.artist))
