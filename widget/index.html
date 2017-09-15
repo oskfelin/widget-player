@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Player</title>
+    <link rel="stylesheet" href="jquery.mCustomScrollbar.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Rambla:400,700" rel="stylesheet">
+
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/jquery-ui.min.js"></script>
 </head>
@@ -61,6 +63,15 @@
 <script src="scripts/slider.js"></script>
 <script src="scripts/playlist.js"></script>
 <script src="scripts/track-controls.js"></script>
-
+<script src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $("#songs-list").mCustomScrollbar({
+                theme:"dark-thick"
+            });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
