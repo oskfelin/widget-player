@@ -58,6 +58,8 @@ body
         position: absolute
         margin-left: 95px
         opacity: 0.3
+      .fa-bars:hover
+        opacity: 1
     #title
       background-color: $text-background
       height: 65px
@@ -124,17 +126,7 @@ body
         top: 47px
       .pause
         position: relative
-        svg
-          position: absolute
-          height: 100%
-          display: block
-        width: 55px
-        height: 55px
-        background: $icon-color
-        color: white
-        left: 154px
-        top: 38px
-      .play
+        margin: 0
         svg
           position: absolute
           height: 100%
@@ -159,6 +151,8 @@ body
         color: $red-color
         left: 303px
         top: 47px
+        .fa-heart-o
+          color: $icon-color
 
 
   .shadow2-top
@@ -196,6 +190,9 @@ body
         height: 36px
         background: white
         color: $icon-color
+      .fa-arrow-left:hover
+        box-shadow: 1px 1px $artist-name-color
+        font-weight: bolder
       .playlist-title
         position: absolute
         font-size: 18px
@@ -238,3 +235,6 @@ body
       left: 264px
       top: 14px
       color: $red-color
+    .fa-heart-o
+      left: 264px
+      top: 14px

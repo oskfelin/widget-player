@@ -45,7 +45,6 @@ $.getJSON("../data/songs.json", function (songs) {
         });
         circle.set(0.36);
     };
-
 });
 
 

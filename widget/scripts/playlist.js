@@ -33,6 +33,10 @@ function playlist() {
             titleLoader();
             return currId
         });
+        $($('.fa-heart')).click(function () {
+            $(this).toggleClass('fa-heart').toggleClass('fa-heart-o')
+        });
     });
 }
 playlist();
+
