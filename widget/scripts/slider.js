@@ -1,5 +1,5 @@
-$(function() {
-    var slider  = $('#slider');
+$(function () {
+    var slider = $('#slider');
     slider.slider({
         range: "min",
         min: 1,
