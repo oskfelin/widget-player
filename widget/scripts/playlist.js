@@ -32,12 +32,12 @@ function playlist() {
             $('#songs-list').append($('<div>').addClass('song')
                 .append($('<span>').addClass('song-duration').text(song.duration))
                 .append($('<span>').addClass('song-artist').text(song.artist))
-                .append($('<div>').addClass('song-name').attr('id', song.id).text(song.title))
+                .append($('<div>').addClass('song-name1').attr('id', song.id).text(song.title))
                 .append($('<i class="fa fa-share-alt" aria-hidden="true"></i>'))
                 .append($('<i class="fa fa-heart" aria-hidden="true"></i>'))
             )
         });
-        $('.song-name').click(function () {
+        $('.song-name1').click(function () {
             currId = parseInt(this.id);
             $playlist.hide();
             $player.show();
@@ -50,4 +50,3 @@ function playlist() {
     });
 }
 playlist();
-
