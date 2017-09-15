@@ -42,11 +42,21 @@ $.getJSON("../data/songs.json", function (songs) {
     window.onload = function onLoad() {
         var circle = new ProgressBar.Circle('#progress', {
             color: '#d3d5de',
-            strokeWidth: 5,
+            strokeWidth: 7,
             trailColor: '#ffffff',
-            trailWidth: 5
+            trailWidth: 7
         });
-        circle.set(0.4);
+        circle.set(0.36);
+
+        var circle1 = new ProgressBar.Circle('#progress1', {
+            color: '#d3d5de',
+            strokeWidth: 7,
+            start: 0.36,
+            duration: 30000,
+            trailColor: '#ffffff',
+            trailWidth: 7
+        });
+        circle1.animate(1);
     };
 
 });
