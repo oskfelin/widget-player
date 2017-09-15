@@ -5,8 +5,19 @@ var $back = $('#back');
 
 $($playlist.hide());
 
+(function($){
+    $(window).on("load",function(){
+        $("#songs-list").mCustomScrollbar({
+            theme:"dark-thick"
+        })
+    });
+})($);
+
 $($burger).click(function () {
     $player.hide();
+    $('#songs-list').mCustomScrollbar("scrollTo",490,{
+        scrollInertia:0
+    });
     $playlist.show()
 });
 $($back).click(function () {
